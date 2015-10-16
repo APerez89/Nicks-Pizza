@@ -1,1 +1,71 @@
-style.css
+.nav-wrapper {
+	position: fixed;
+	top: 0;
+	height: 50px;
+	width: 100%;
+	z-index: 1;
+}
+
+.nav-wrapper .nav {
+	float: right;
+	margin-right: 40px;
+	width: 500px;
+}
+
+.nav-wrapper .nav ul {
+	list-style: none;
+}
+
+.nav-wrapper .nav ul li {
+	display: inline;
+	margin-left: 30px;
+}
+
+.nav-wrapper .nav ul li a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+
+.section {
+	background-size: cover;
+}
+
+/* Page 1 */
+#fullpage .section:nth-child(1) {
+	background-image: url("img/pizzabkg.jpg");
+	text-align: center;
+}
+
+#fullpage .section:nth-child(1) img {
+	width: 40%;
+}
+
+/* Page 2 */
+#fullpage .section:nth-child(2) {
+
+}
+
+/* Page 3 */
+#fullpage .section:nth-child(3) {
+	background-image: url("img/menubkg.jpg");
+	text-align: center;
+}
+
+#fullpage .section:nth-child(3) .menu-wrapper .menu-item img {
+	width: 55%;
+}
+
+#fullpage .section:nth-child(3) .menu-wrapper .menu-item {
+	display: inline-block;
+}
+
+#fullpage .section:nth-child(3) .menu-wrapper .menu-item h3 {
+	text-transform: uppercase;
+	color: white;
+}
+
+/* Page 4 */
+#fullpage .section:nth-child(4) {
+	background-image: url("img/baccobkg.jpg");
+}
