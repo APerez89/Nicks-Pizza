@@ -1,3 +1,4 @@
+/* Nav */
 .nav-wrapper {
 	position: fixed;
 	top: 0;
@@ -9,7 +10,7 @@
 .nav-wrapper .nav {
 	float: right;
 	margin-right: 40px;
-	width: 500px;
+	width: 600px;
 }
 
 .nav-wrapper .nav ul {
@@ -27,13 +28,18 @@
 	text-transform: uppercase;
 }
 
+.nav-wrapper .nav img {
+	width: 6%;
+}
+
+/* General */
 .section {
 	background-size: cover;
 }
 
 /* Page 1 */
 #fullpage .section:nth-child(1) {
-	background-image: url("img/pizzabkg.jpg");
+	background-image: url("img/background/pizzabkg.jpg");
 	text-align: center;
 }
 
@@ -43,12 +49,12 @@
 
 /* Page 2 */
 #fullpage .section:nth-child(2) {
-
+	background-color: #edede7;
 }
 
 /* Page 3 */
 #fullpage .section:nth-child(3) {
-	background-image: url("img/menubkg.jpg");
+	background-image: url("img/background/menubkg.jpg");
 	text-align: center;
 }
 
@@ -65,7 +71,92 @@
 	color: white;
 }
 
+/* Modal Test */
+#fullpage .section:nth-child(3) .modalDialog {
+	position: absolute;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+	z-index: 1;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+#fullpage .section:nth-child(3) .modalDialog:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+#fullpage .section:nth-child(3) .modalDialog > div {
+	width: 1150px;
+	height: 600px;
+	position: relative;
+	margin: 6% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+#fullpage .section:nth-child(3) .close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+#fullpage .section:nth-child(3) .close:hover {
+	background: #00d9ff;
+}
+
+#fullpage .section:nth-child(3) .modalDialog div .left {
+	width: 450px;
+	display: inline-block;
+}
+
+#fullpage .section:nth-child(3) .modalDialog div .left img {
+	position: absolute;
+	width: 450px;
+	height: 618.5px;
+	border-radius: 10px 0px 0px 10px;
+	top: 0;
+	left: 0;
+}
+
+#fullpage .section:nth-child(3) .modalDialog div .right {
+	width: 700px;
+	margin: 5px 20px 5px;
+	position: relative;
+	display: inline-block;
+	text-align: left;
+	left: 240px;
+}
+
+#fullpage .section:nth-child(3) .modalDialog div .right table {
+	width: 100%;
+}
+
 /* Page 4 */
 #fullpage .section:nth-child(4) {
-	background-image: url("img/baccobkg.jpg");
+	background-image: url("img/background/baccobkg.jpg");
 }
