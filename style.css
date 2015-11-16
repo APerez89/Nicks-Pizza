@@ -1,4 +1,4 @@
-/* Nav */
+/* Nav																Navigation 																Nav */
 .nav-wrapper {
 	position: fixed;
 	top: 0;
@@ -18,26 +18,41 @@
 }
 
 .nav-wrapper .nav ul li {
-	display: inline;
-	margin-left: 30px;
+	display: inline-block;
+	width: 108px;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;	
 }
 
 .nav-wrapper .nav ul li a {
 	text-decoration: none;
-	color: white;
+	color: #FFFFFF;
 	text-transform: uppercase;
+	font-size: 100%;
+	font-family: 'Open Sans';
+	transition: font-size .5s ease-in-out;
 }
 
 .nav-wrapper .nav img {
 	width: 6%;
+	transition: width .5s ease-in-out;
 }
 
-/* General */
+.nav-wrapper .nav ul li a:hover {
+	font-size: 115%;
+}
+
+.nav-wrapper .nav img:hover {
+	width: 7%;
+}
+
+/* Gen																General																	Gen */
 .section {
 	background-size: cover;
 }
 
-/* Page 1 */
+/* Page 1															Page 1 																Page 1 */
 #fullpage .section:nth-child(1) {
 	background-image: url("img/background/pizzabkg.jpg");
 	text-align: center;
@@ -47,19 +62,70 @@
 	width: 40%;
 }
 
-/* Page 2 */
+/* Page 2															Page 2 																Page 2 */
 #fullpage .section:nth-child(2) {
 	background-color: #edede7;
 }
 
-/* Page 3 */
+#fullpage .section:nth-child(2) .column-left {
+	float: left;
+	width: 65%;
+	position: relative;
+}
+
+#fullpage .section:nth-child(2) .column-left .left-inner {
+	width: 70%;
+	margin: 0 auto;
+}
+
+#fullpage .section:nth-child(2) .column-left .left-inner h1 {
+	text-transform: uppercase;
+	font-family: 'Open Sans';
+	text-align: center;
+}
+
+#fullpage .section:nth-child(2) .column-left .left-inner span {
+	font-size: 500%;
+	color: #c93737;
+	font-family: 'Imprint MT Shadow';
+	display: block;
+	margin: 0 auto;
+	width: 160px;
+}
+
+#fullpage .section:nth-child(2) .column-left .left-inner p {
+	font-family: 'Open Sans';
+}
+
+#fullpage .section:nth-child(2) .column-right {
+	float: left;
+	width: 35%;
+}
+
+#fullpage .section:nth-child(2) .column-right img {
+	width: 80%;
+}
+
+/* Page 3															Page 3 																Page 3 */
 #fullpage .section:nth-child(3) {
 	background-image: url("img/background/menubkg.jpg");
 	text-align: center;
 }
 
+#fullpage .section:nth-child(3) header {
+	font-family: 'Imprint MT Shadow';
+	color: #FFFFFF;
+	font-size: 500%;
+	text-transform: uppercase;
+}
+
 #fullpage .section:nth-child(3) .menu-wrapper .menu-item img {
-	width: 55%;
+	width: 60%;
+	transition: width .7s ease-in-out;
+}
+
+#fullpage .section:nth-child(3) .menu-wrapper .menu-item img:hover {
+	width: 65%:;
 }
 
 #fullpage .section:nth-child(3) .menu-wrapper .menu-item {
@@ -69,6 +135,27 @@
 #fullpage .section:nth-child(3) .menu-wrapper .menu-item h3 {
 	text-transform: uppercase;
 	color: white;
+	font-family: 'Open Sans';
+	font-weight: lighter;
+}
+
+#fullpage .section:nth-child(3) .view-wrapper {
+	width: 100%;
+}
+
+#fullpage .section:nth-child(3) .view-wrapper .view {
+	background-color: #343434;
+	width: 65px;
+	height: 65px;
+	border-radius: 50px;
+	margin: 0 auto;
+}
+
+#fullpage .section:nth-child(3) .view-wrapper .view a {
+	text-decoration: none;
+	color: #FFFFFF;
+	height: 65px;
+	vertical-align: middle;
 }
 
 /* Modal Test */
@@ -98,7 +185,6 @@
 	height: 600px;
 	position: relative;
 	margin: 6% auto;
-	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
 	background: #fff;
 	background: -moz-linear-gradient(#fff, #999);
@@ -130,33 +216,65 @@
 }
 
 #fullpage .section:nth-child(3) .modalDialog div .left {
-	width: 450px;
-	display: inline-block;
-}
-
-#fullpage .section:nth-child(3) .modalDialog div .left img {
-	position: absolute;
-	width: 450px;
-	height: 618.5px;
-	border-radius: 10px 0px 0px 10px;
-	top: 0;
-	left: 0;
+	float: left;
+	width: 35%;
+	height: 100%;
+	background-image: url("img/menu/pizza.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 #fullpage .section:nth-child(3) .modalDialog div .right {
-	width: 700px;
-	margin: 5px 20px 5px;
-	position: relative;
-	display: inline-block;
-	text-align: left;
-	left: 240px;
+	float: left;
+	width: 65%;
+	height: 100%
 }
 
 #fullpage .section:nth-child(3) .modalDialog div .right table {
 	width: 100%;
 }
 
-/* Page 4 */
+/* Page 4															Page 4 																Page 4 */
 #fullpage .section:nth-child(4) {
 	background-image: url("img/background/baccobkg.jpg");
+}
+
+#fullpage .section:nth-child(4) footer {
+	width: 100%;
+	height: 145px;
+	background-color: #121214;
+	position: absolute;
+	bottom: 0;
+}
+
+#fullpage .section:nth-child(4) footer .top {
+	width: 100%;
+	height: 120px;
+}
+
+#fullpage .section:nth-child(4) footer .top .foot-col {
+	color: #FFFFFF;	
+	display: inline-block;
+	font-family: 'Open Sans';
+	width: 250px;
+	float: right;
+	padding-top: .5%;
+}
+
+#fullpage .section:nth-child(4) footer .top .foot-col h3 {
+	text-transform: uppercase;
+}
+
+#fullpage .section:nth-child(4) footer .top .foot-col p {
+	font-weight: lighter;
+}
+
+#fullpage .section:nth-child(4) footer .bottom {
+	width: 100%;
+}
+
+#fullpage .section:nth-child(4) footer .bottom p {
+	color: #FFFFFF;
+	margin: 0;
+	padding-left: 1%;
 }
