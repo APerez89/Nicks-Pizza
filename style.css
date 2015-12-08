@@ -34,9 +34,18 @@
 	transition: font-size .5s ease-in-out;
 }
 
+.nav-wrapper .nav .phoneimg {
+	display: inline-block;
+	width: 55px;
+	height: 40px;
+}
+
 .nav-wrapper .nav img {
-	width: 6%;
+	width: 50%;
 	transition: width .5s ease-in-out;
+	position: relative;
+	display: block;
+	margin: 15.5px auto;
 }
 
 .nav-wrapper .nav ul li a:hover {
@@ -44,7 +53,7 @@
 }
 
 .nav-wrapper .nav img:hover {
-	width: 7%;
+	width: 60%;
 }
 
 /* Gen																General																	Gen */
@@ -64,7 +73,16 @@
 
 /* Page 2															Page 2 																Page 2 */
 #fullpage .section:nth-child(2) {
-	background-color: #edede7;
+	background-image: url("img/background/rice2.png");
+	background-position-x: initial;
+	background-position-y: initial;
+	background-size: initial;
+	background-repeat-x: initial;
+	background-repeat-y: initial;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: initial;
 }
 
 #fullpage .section:nth-child(2) .column-left {
@@ -117,15 +135,17 @@
 	color: #FFFFFF;
 	font-size: 500%;
 	text-transform: uppercase;
+	position: relative;
+	top: -7%;
 }
 
 #fullpage .section:nth-child(3) .menu-wrapper .menu-item img {
 	width: 60%;
-	transition: width .7s ease-in-out;
+	transition: width .6s ease-in-out;
 }
 
 #fullpage .section:nth-child(3) .menu-wrapper .menu-item img:hover {
-	width: 65%:;
+	width: 65%;
 }
 
 #fullpage .section:nth-child(3) .menu-wrapper .menu-item {
@@ -141,21 +161,27 @@
 
 #fullpage .section:nth-child(3) .view-wrapper {
 	width: 100%;
+	position: relative;
+	bottom: -7%;
 }
 
 #fullpage .section:nth-child(3) .view-wrapper .view {
-	background-color: #343434;
-	width: 65px;
-	height: 65px;
-	border-radius: 50px;
 	margin: 0 auto;
+	position: relative;
 }
 
 #fullpage .section:nth-child(3) .view-wrapper .view a {
 	text-decoration: none;
 	color: #FFFFFF;
-	height: 65px;
 	vertical-align: middle;
+	background-color: #343434;
+	padding: 35px 20px;
+	border-radius: 100px;
+	transition: padding .5s ease-in-out;
+}
+
+#fullpage .section:nth-child(3) .view-wrapper .view a:hover {
+	padding: 40px 25px;
 }
 
 /* Modal Test */
